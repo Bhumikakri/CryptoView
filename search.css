@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(29, 27, 27);
+}
+.container2{
+    max-width: 100vw;
+    /* height: 100vh; */
+    background-color: rgb(29, 27, 27);
+    color: aliceblue;
+    /* border: 1px solid white; */
+}
+nav{
+    width: 100%;
+    height: 70px;
+    /* border: 2px solid red; */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 3px 5px 6px rgb(0, 0, 0);
+    display: flex;
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+    flex-wrap:inherit;
+    align-items: center;
+    justify-content: space-around;
+}
+nav h1{
+    font-size: 300%;
+    text-shadow: 3px 5px 6px rgb(0, 0, 0);
+}
+.back{
+    width: 100px;
+    height: 40%;
+    background-color: rgb(19, 145, 145);
+    color: aliceblue;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 3px 5px 6px rgb(0, 0, 0);
+    cursor: pointer;
+}
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.inputs{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+input{
+    width: 30%;
+    height: 50%;
+    background-color:transparent;
+    border: none;
+    border: 1px dotted white;
+    border-radius: 20px;
+    padding-left: 1rem;
+    color: white;
+    font-size: 1rem;
+}
+input:hover{
+    box-shadow: 3px 5px 6px rgb(0, 0, 0);
+}
+.mainsearchbtn{
+    width: 100px;
+    height: 40%;
+    background-color: rgb(248, 190, 29);
+    color: aliceblue;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 3px 5px 6px rgb(0, 0, 0);
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: none;
+}
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    /* border: 2px solid white; */
+    background-color: rgba(0, 0, 0, 0.664);
+}
+footer a{
+    text-decoration: none;
+    color: rgb(148, 146, 146);
+}
+.allCoins{
+    width: 100%;
+    /* height: 100px; */
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 0.3rem;
+    background-color: rgb(29, 27, 27);
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    border-radius: 5px;
+    width: 80%;
+    height: 50px;
+    color: rgb(248, 248, 248);
+    background-color: rgb(0, 0, 0);
+    padding: 1rem;
+}
+.cards:hover{
+    box-shadow: 3px 10px 6px rgb(75, 73, 73);
+}
+.leftside{
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+    flex-wrap: inherit;
+    font-size: 0.8rem;
+    background-color: transparent;
+}
+.cards a{
+    display: none;
+}
+.morbtn{
+    width: 100px;
+    height: 1.5rem;
+    background-color: rgb(248, 190, 29);
+    color: aliceblue;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 3px 5px 6px rgb(0, 0, 0);
+    cursor: pointer;
+}
+.morbtn:hover{
+    background-color: rgb(19, 145, 145);
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(80, 80, 73);
+    border-radius: 20px;
+}
+@media (min-width:270px) and  (max-width:414px) {
+    nav h1{
+        font-size: 1.2rem;
+        text-shadow: 3px 5px 6px rgb(0, 0, 0);
+    }
+    .leftside{
+        gap: 0.2rem;
+        flex-wrap: wrap;
+        font-size: 0.4rem;
+    }
+}
