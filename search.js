@@ -2,23 +2,21 @@ let backbtn = document.querySelector(".back");
 let inputs = document.querySelector("input");
 let mainbtn = document.querySelector(".mainsearchbtn");
 let allcoinses = document.querySelector(".allCoins");
-
+// ---------------adding events on all more details btn-------------------//
 function moreinfo(allbtns){
     // console.log(allbtns);
     allbtns.forEach(button=>{
         button.addEventListener("click",detailbtn);
     })
 }
-
+//-------------------pass the id in details js-------------------//
 function detailbtn(e){
-    // console.log(e.target)
     let val = e.target.parentElement.children[1].innerText;
-    // console.log(val);
     window.location =`details.html?q=${val}`;
 
 }
 
-
+// -----------------create card for coins & btn -----------------//
 
 function Coinscontainer(result){
     allcoinses.innerHTML="";
@@ -38,7 +36,7 @@ function Coinscontainer(result){
         moreinfo(dtsbtn);
     })
 }
-
+// --------------------fetch data----------------------//
 async function  makefuntion(){
     let fetchdata =  await fetch(`https://api.coingecko.com/api/v3/search?query=${inputs.value}`)
     fetchdata = await fetchdata.json();
@@ -46,11 +44,14 @@ async function  makefuntion(){
     Coinscontainer(fetchdata);
 }
 
-
+// ----------------adding events for show data in ui-------------------//
 mainbtn.addEventListener("click",()=>{
     makefuntion();
 })
-
+// -------------------adding event on back btn------------------//
 backbtn.addEventListener("click", ()=>{
     window.location =`index.html`;
 })
+
+
+// created by bhumii...
