@@ -58,7 +58,8 @@ nav{
 }
 .alldetails{
     width: 100%;
-    height: 78%;
+    min-height:89%;
+    height: auto;
 }
 .dtlpage{
     width: 100%;
